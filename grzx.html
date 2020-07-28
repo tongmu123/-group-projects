@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/myshop.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+
+		<script src="js/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".header").load("publicpage/header1.html", function() {
+
+				});
+				$(".header2").load("publicpage/header2.html", function() {
+
+				});
+
+				$(".footer").load("publicpage/footer.html", function() {
+
+				});
+			})
+		</script>
+	</head>
+	<body style="background-color: #f5f5f5">
+		<div class="header"></div>
+		<div class="header2"></div>
+		<div class="container">
+			<div class="myshop">
+				<ul>
+					<li class="dl">
+						<ol>
+							<li><a href="#"><span>我的商城</span></a></li>
+						</ol>
+					</li>
+					<li class="dl">
+						<h3>我的消息</h3>
+						<ol>
+							<li><a href=""><span>消息中心</span></a></li>
+							<li><a href=""><span>活动推送</span></a></li>
+						</ol>
+					</li>
+					<li class="dl">
+						<h3>订单中心</h3>
+						<ol>
+							<li><a href=""><span>我的订单</span></a></li>
+							<li><a href=""><span>我的退换货</span></a></li>
+							<li><a href=""><span>我的退款</span></a></li>
+							<li><a href=""><span>我的回收单</span></a></li>
+							<li><a href=""><span>商品评价</span></a></li>
+						</ol>
+					</li>
+					<li class="dl">
+						<h3>我的资产</h3>
+						<ol>
+							<li><a href=""><span>我的积分</span></a></li>
+							<li><a href=""><span>我的优惠券</span></a></li>
+							<li><a href=""><span>我的代金券</span></a></li>
+							<li><a href=""><span>我的花瓣</span></a></li>
+							<li><a href=""><span>等级与特权</span></a></li>
+						</ol>
+					</li>
+					<li class="dl">
+						<h3>购买支持</h3>
+						<ol>
+							<li><a href=""><span>收货地址管理</span></a></li>
+							<li><a href=""><span>实名认证</span></a></li>
+							<li><a href=""><span>我的预约</span></a></li>
+							<li><a href=""><span>到货通知</span></a></li>
+							<li><a href=""><span>我的优享购</span></a></li>
+						</ol>
+					</li>
+					<li class="dl">
+						<ol>
+							<li><a href="#"><span>帮助中心</span></a></li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			<!-- 个人内容 -->
+			<div class="grbox">
+				<!-- 顶部信息 -->
+				<div class="gb_top">
+					<!-- 头像 -->
+					<div class="gt_tx"></div>
+					<div class="gt_usename">
+						<a href="#">
+							<div class="hyqy">会员权益</div>
+						</a>
+						<a href="#">
+							<div class="zhzx">账号中心</div>
+						</a>
+
+					</div>
+					<div class="gtsum">
+						<div class="gtsbox jf">
+							<a href="#">20</a>
+							<p>积分</p>
+							<a href="#"><div class="qck">去查看</div></a>
+						</div>
+						<div class="gtsbox yhj">
+							<a href="#">20</a>
+							<p>优惠券</p>
+							<a href="#"><div class="qck">去查看</div></a>
+						</div>
+						<div class="gtsbox djq">
+							<a href="#">20</a>
+							<p>代金券</p>
+							<a href="#"><div class="qck">去查看</div></a>
+						</div>
+						<div class="gtsbox hb">
+							<a href="#">20</a>
+							<p>花瓣</p>
+							<a href="#"><div class="qck">去查看</div></a>
+						</div>
+
+					</div>
+				</div>
+				<!-- 左侧内容 -->
+				<div class="grboxleft">
+
+					<!-- 我的订单 -->
+					<div class="gbl_dd">
+						<div class="gbdh">
+							<div class="gbr_txt">我的订单</div>
+							<div class="dda"><a href="">全部订单></a></div>
+						</div>
+
+						<div class="gbd_title">
+
+							<div class="gn">
+								<a href="#">
+									<div class="gnbox gnboxll">
+										<span>待付款</span>
+									</div>
+
+								</a>
+								<a href="#">
+									<div class="gnbox gnboxlr">
+										<span>待收货</span>
+									</div>
+
+								</a>
+								<a href="#">
+									<div class="gnbox gnboxcon">
+										<span>待评价</span>
+									</div>
+
+								</a>
+								<a href="#">
+									<div class="gnbox gnboxrl">
+										<span>退换货</span>
+									</div>
+
+								</a>
+								<a href="#">
+									<div class="gnbox gnboxrr">
+										<span>小程序</span>
+									</div>
+
+								</a>
+							</div>
+
+
+
+
+						</div>
+						<div class="gbd_con">
+							<div class="bc"></div>
+							<span>当前无近期订单,前往<a href="index.html">首页</a>选购吧~</span>
+						</div>
+
+					</div>
+					<!-- 最近浏览 -->
+					<div class="gbl_ll">
+						<div class="gbr_txt">最近浏览</div>
+						<a href="#">
+							<div class="glbox glb_lef"></div>
+						</a>
+						<a href="#">
+							<div class="glbox glb_cenlet"></div>
+						</a>
+						<a href="#">
+							<div class="glbox glb_cenrig"></div>
+						</a>
+						<a href="#">
+							<div class="glbox glb_rig"></div>
+						</a>
+					</div>
+					<!-- 为您推荐 -->
+					<div class="gbl_tj">
+						<div class="gbr_txt">为您推荐</div>
+						<a href="#">
+							<div class="gtbox gtb_top"></div>
+						</a>
+						<a href="#">
+							<div class="gtbox gtb_cen"></div>
+						</a>
+						<a href="#">
+							<div class="gtbox gtb_bot"></div>
+						</a>
+					</div>
+
+				</div>
+				<!-- 右侧内容 -->
+				<div class="grboxrig">
+					<!-- 我的消息 -->
+					<div class="gbr_xx">
+						<div class="gbr_txt">我的消息</div>
+
+
+						<ul class="menu clear">
+							<li><a href="#">您有10张优惠券到账，进来看看吧
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+							<li><a href="#">您有2张优惠券到账，进来看看吧
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+							<li><a href="#">您有1张优惠券到账，进来看看吧
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a></li>
+						</ul>
+					</div>
+					<!-- 以旧换新 -->
+					<a href="#">
+						<div class="gbr_hx">
+
+						</div>
+					</a>
+					<!-- 我的服务 -->
+					<div class="gbr_fw">
+						<div class="gbr_txt">我的服务</div>
+						<a href="#">
+							<div class="gt_fw"></div>
+						</a>
+					</div>
+
+					<!-- 新人见面礼 -->
+					<a href="#">
+						<div class="gbr_jml"></div>
+					</a>
+					<!-- 华为移动生活 -->
+					<div class="gbr_sh">
+						<div class="gbr_txt">华为移动生活</div>
+						<a href="#">
+							<div class="boxsh s_jk"></div>
+						</a>
+						<a href="#">
+							<div class="boxsh s_yk"></div>
+						</a>
+						<a href="#">
+							<div class="boxsh s_hbk"></div>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="write"></div>
+		<div class="footer"></div>
+	</body>
+</html>

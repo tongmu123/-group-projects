@@ -1,0 +1,173 @@
+.registerbox {
+    width: 442px;
+    height: 730px;
+    margin: 0 auto;
+    margin-top: 70px;
+    /* text-align: center; */
+}
+
+.registerbox>p {
+    text-align: center;
+    font-size: 32px;
+    color: #191919;
+    line-height: 1.3;
+}
+
+.registerbox>div:nth-child(2) {
+    text-align: center;
+    font-size: 18px;
+    color: #191919;
+    margin-top: 20px;
+}
+
+.registerbox>div:nth-child(2)>a {
+
+    color: rgb(66, 139, 255);
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.registerbox>form {
+    margin-top: 20px;
+}
+
+.registerbox>form input {
+    width: 440px;
+    height: 48px;
+    font-size: 14px;
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-radius: 9px;
+    padding-left: 15px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.relative .yanzheng {
+    width: 80px;
+    height: 48px;
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 355px;
+    font-size: 14px;
+    color: rgb(66, 139, 255);
+    outline: none;
+    cursor: pointer;
+}
+
+.registerbox>form>input:last-child {
+    background-color: rgb(159, 206, 255);
+    margin-top: 50px;
+    width: 310px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    margin-left: 75px;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.r-switch {
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    color: #191919;
+    line-height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+.switchbox {
+    position: absolute;
+    left: 200px;
+    top: 93px;
+}
+
+/* 插件样式 */
+.Validform_checktip {
+    margin-left: 8px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+}
+
+.Validform_right {
+    color: #71b83d;
+    padding-left: 20px;
+    background: url(../images/right.png) no-repeat left center;
+}
+
+.Validform_wrong {
+    color: red;
+    padding-left: 20px;
+    white-space: nowrap;
+    background: url(../images/error.png) no-repeat left center;
+}
+
+.Validform_loading {
+    padding-left: 20px;
+    background: url(../images/onLoad.gif) no-repeat left center;
+}
+
+.Validform_error {
+    background-color: #ffe7e7;
+}
+
+#Validform_msg {
+    color: #7d8289;
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+    width: 280px;
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    z-index: 99999;
+    display: none;
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+
+#Validform_msg .iframe {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    z-index: -1;
+}
+
+#Validform_msg .Validform_title {
+    line-height: 25px;
+    height: 25px;
+    text-align: left;
+    font-weight: bold;
+    padding: 0 8px;
+    color: #fff;
+    position: relative;
+    background-color: #000;
+}
+
+#Validform_msg a.Validform_close:link,
+#Validform_msg a.Validform_close:visited {
+    line-height: 22px;
+    position: absolute;
+    right: 8px;
+    top: 0px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#Validform_msg a.Validform_close:hover {
+    color: #cc0;
+}
+
+#Validform_msg .Validform_info {
+    padding: 8px;
+    border: 1px solid #000;
+    border-top: none;
+    text-align: left;
+}

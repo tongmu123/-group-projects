@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="lib/Validform_v5.3.2/Validform_v5.3.2_min.js"></script>
+    <script src="lib/laydate/laydate.js"></script>
+    <script src="js/reginter.js"></script>
+</head>
+
+<body>
+    <div class="re-header"></div>
+    <div class="switchbox">
+        <div class="r-switch" id="phone" style="margin-top: 50px;background-color: rgb(242,242,242);">手机号注册</div>
+        <div class="r-switch" id="email">邮箱地址注册</div>
+    </div>
+    <div class="registerbox">
+        <p>华为账号注册</p>
+        <div>已有账号,<a href="login.html">去登陆</a></div>
+        <form action="" class="demoform">
+            <div class="relative" style="margin-top: 60px;">
+                <input type="text" value="" placeholder="请输入手机号" datatype="m" errormsg="请输入正确的手机号" />
+                <div class="Validform_checktip"></div>
+            </div>
+            <div class="relative clearfix" style="position: relative;">
+                <input type="text" value="" placeholder="请输入验证码" datatype="/^\d{6}$/" errormsg="请输入6位数字的手机验证码" />
+                <button type="button" class="yanzheng fr">获取验证码</button>
+                <div class="Validform_checktip"></div>
+            </div>
+            <div class="relative">
+                <input type="password" value="" placeholder="请输入6~15位字符密码" name="userpassword" datatype="*6-15"
+                    errormsg="密码范围在6~15位之间！" />
+                <div class="Validform_checktip"></div>
+            </div>
+            <div class="relative">
+                <input type="password" value="" placeholder="请输入与上面相同的密码" name="userpassword2" datatype="*"
+                    recheck="userpassword" errormsg="您两次输入的账号密码不一致！" />
+                <div class="Validform_checktip"></div>
+            </div>
+            <div class="relative">
+                <input id="test1" type="text" placeholder="请选择你的出生日期" datatype="/^[\d]{4}[-\ ][\d]{1,2}[-\ ][\d]{1,2}$/"/>
+                <div class="Validform_checktip"></div>
+            </div>
+            <input type="submit" value="注册">
+        </form>
+        <form action="" class="demoform" style="display: none;">
+            <div class="relative" style="margin-top: 60px;">
+                <input type="text" value="" placeholder="请输入邮箱号" datatype="e" errormsg="请输入正确的邮箱号" />
+                <div class="Validform_checktip"></div>
+            </div>
+            <div class="relative clearfix" style="position: relative;">
+                <input type="text" value="" placeholder="请输入邮箱验证码" datatype="/^\d{6}$/" errormsg="请输入6位数字的邮箱验证码" />
+                <button type="button" class="yanzheng fr">获取验证码</button>
+                <div class="Validform_checktip"></div>
+            </div>
+            <div class="relative">
+                <input type="password" value="" placeholder="请输入6~15位字符密码" name="userpassword" datatype="*6-15"
+                    errormsg="密码范围在6~15位之间！" />
+                <div class="Validform_checktip"></div>
+            </div>
+            <div class="relative">
+                <input type="password" value="" placeholder="请输入与上面相同的密码" name="userpassword2" datatype="*"
+                    recheck="userpassword" errormsg="您两次输入的账号密码不一致！" />
+                <div class="Validform_checktip"></div>
+            </div>
+            <div class="relative">
+                <input id="test1" type="text" placeholder="请选择你的出生日期" datatype="/^[\d]{4}[-\ ][\d]{1,2}[-\ ][\d]{1,2}$/"/>
+                <div class="Validform_checktip"></div>
+            </div>
+            <input type="submit" value="注册">
+        </form>
+    </div>
+    <div class="re-footer" style="background-color: rgb(242,242,242);"></div>
+</body>
+
+</html>

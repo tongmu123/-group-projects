@@ -1,0 +1,64 @@
+.content{
+	width: 800px;
+	height: 3100px;
+	float: right;
+	border: 1px solid #D0D0D0;
+}
+.jieshao{
+	height: 75px;
+	width: 750px;
+	margin: auto;
+	border-bottom: 1px dashed #C5C5C5;
+	box-sizing: border-box;
+	padding-top: 14px;
+}
+.title{
+	width: 317px;
+	height: 54px;
+	background: url(../img/about_huawei/beijing.png);
+	box-sizing: border-box;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+.p1{
+	color: #fff;
+	font-weight: 700;
+	font-size: 15px;
+}
+.biaoti{
+	height: 85px;
+	box-sizing: border-box;
+	padding-left: 25px;
+	margin-left: 20px;
+}
+.p2{
+	font-size: 25px;
+	color: #282828;
+	line-height: 85px;
+	font-weight: 700;
+}
+.word{
+	width: 710px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.p3{
+	text-indent: 2em;
+	color: #282828;
+	font-size: 18px;
+	line-height: 35px;
+}
+.tupian{
+	width: 500px;
+	height: 328px;
+	margin-left: 150px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+/* .word2{
+	width: 710px;
+	height: 300px;
+	margin: auto;
+	margin-top: 30px;
+} */

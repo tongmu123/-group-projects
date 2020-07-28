@@ -1,0 +1,42 @@
+.account{
+    margin-top: 65px;
+	margin-bottom: 75px;
+}
+.account .account_right{
+    width: 800px;
+    height: 1900px;
+    border: 1px solid rgb(208,208,208);
+}
+.account_right>div:first-child{
+    padding: 24px 0;
+    border-bottom: 1px dashed #c5c5c5;
+    margin: 0 26px;
+}
+.account_right>.contant{
+    width: 746px;
+    height: 1500px;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 12px;
+    color: rgb(102,102,102);
+    line-height: 20px;
+    box-sizing: border-box;
+}
+.account_right span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+.account_btn{
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 70px;
+    height: 33px;
+    text-align: center;
+    color: white;
+    line-height: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 153, 0);
+}
