@@ -1,26 +1,21 @@
 
 $(function () {
-	
-    var $index_a = localStorage.getItem("account");
-    if($index_a == "0"){
-        $("#index-img1").css({"display":"inline-block"});
-        $("#index-img2").css({"display":"none"});
-        $("#index-div1").css({"display":"inline-block"});
-        $("#index-div2").css({"display":"none"});
-    }
-    else{
-        $("#index-img1").css({"display":"none"});
-        $("#index-img2").css({"display":"inline-block"});
-        $("#index-div1").css({"display":"none"});
-        $("#index-div2").css({"display":"inline-block"});
-        $("#index-div2>span").text($index_a.substr(1,3)+"****");
-    }
     $(".nav_header1").load("publicpage/header1.html", function () {
-	});
-	$(".nav_header2").load("publicpage/header2.html", function () {
-	});
-	$(".index-foot").load("publicpage/footer.html", function () {
-	});
+    });
+    $(".nav_header2").load("publicpage/header2.html", function () {
+    });
+    $(".index-foot").load("publicpage/footer.html", function () {
+    });
+    var $index_a = localStorage.getItem("account");
+    if ($index_a === "0") {
+        $("#index-img1,#index-div1").css({ "display": "inline-block" });
+        $("#index-img2,#index-div2").css({ "display": "none" });
+    }
+    else {
+        $("#index-img1,#index-div1").css({ "display": "none" });
+        $("#index-img2,#index-div2").css({ "display": "inline-block" });
+        $("#index-div2>span").text($index_a.substr(1, 3) + "****");
+    }
     var mySwiper = new Swiper('.swiper-container', {
         loop: true, // 循环模式选项
         autoplay: {
@@ -43,14 +38,9 @@ $(function () {
     x = $('.news_li');
     y = $('.swap');
     h = $('.news_li li').length * 20; //20为每个li的高度
-    var hh = $('.news_li li').length;
-    if (hh > 1)
-        //setTimeout(b,3000);//滚动间隔时间 现在是3秒
-        b();
     b();
-
     function b() {
-        t = parseInt(x.css('top'));
+        var t = parseInt(x.css('top'));
         //alert(t)
         y.css('top', '20px');
         x.animate({
@@ -60,7 +50,7 @@ $(function () {
             y.animate({
                 top: '0px'
             }, 'slow');
-            z = x;
+            var z = x;
             x = y;
             y = z;
         }

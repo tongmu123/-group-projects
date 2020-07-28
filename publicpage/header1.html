@@ -5,19 +5,16 @@
 <script src="js/h_gouwuche.js"></script>
 <script>
     $(function () {
+		// resetdata();
         h_gouwuche();
         $header_a = localStorage.getItem("account");
-        if ($header_a == 0) {
-            $("#header1-li1").css({ "display": "inline-block" });
-            $("#header1-li2").css({ "display": "inline-block" });
-            $("#header1-li3").css({ "display": "none" });
-            $("#header1-li4").css({ "display": "none" });
+        if ($header_a ==="0") {
+            $("#header1-li1,#header1-li2").css({ "display": "inline-block" });
+            $("#header1-li3,#header1-li4").css({ "display": "none" });
         }
-        if ($header_a != 0) {
-            $("#header1-li1").css({ "display": "none" });
-            $("#header1-li2").css({ "display": "none" });
-            $("#header1-li3").css({ "display": "inline-block" });
-            $("#header1-li4").css({ "display": "inline-block" });
+        else {
+            $("#header1-li1,#header1-li2").css({ "display": "none" });
+            $("#header1-li3,#header1-li4").css({ "display": "inline-block" });
             $("#header1-li3>a").text($header_a.substr(1, 3) + "****");
         }
         $(".header1-btn").hover(function () {
